@@ -14,6 +14,9 @@
 		45CEB5072B69CEAD00111D7E /* Aula1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CEB5062B69CEAD00111D7E /* Aula1View.swift */; };
 		45CEB5092B69CEBC00111D7E /* Aula2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CEB5082B69CEBC00111D7E /* Aula2View.swift */; };
 		45CEB50D2B69CF7000111D7E /* model_aula2.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 45CEB50C2B69CF7000111D7E /* model_aula2.tflite */; };
+		45CEB50F2B69D6F300111D7E /* Aula3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CEB50E2B69D6F300111D7E /* Aula3View.swift */; };
+		45CEB5112B69D6FC00111D7E /* Aula4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CEB5102B69D6FC00111D7E /* Aula4View.swift */; };
+		45CEB5132B69D70400111D7E /* Aula5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CEB5122B69D70400111D7E /* Aula5View.swift */; };
 		CAC4D0206109897053A5FA76 /* Pods_tflite_verao_ime_usp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E720C2FE60BA63E832D21F /* Pods_tflite_verao_ime_usp.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +30,9 @@
 		45CEB5062B69CEAD00111D7E /* Aula1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aula1View.swift; sourceTree = "<group>"; };
 		45CEB5082B69CEBC00111D7E /* Aula2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aula2View.swift; sourceTree = "<group>"; };
 		45CEB50C2B69CF7000111D7E /* model_aula2.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = model_aula2.tflite; sourceTree = "<group>"; };
+		45CEB50E2B69D6F300111D7E /* Aula3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aula3View.swift; sourceTree = "<group>"; };
+		45CEB5102B69D6FC00111D7E /* Aula4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aula4View.swift; sourceTree = "<group>"; };
+		45CEB5122B69D70400111D7E /* Aula5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aula5View.swift; sourceTree = "<group>"; };
 		4AACA47A4A71F994ACEA8578 /* Pods-tflite-verao-ime-usp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tflite-verao-ime-usp.debug.xcconfig"; path = "Target Support Files/Pods-tflite-verao-ime-usp/Pods-tflite-verao-ime-usp.debug.xcconfig"; sourceTree = "<group>"; };
 		C7FAED3186C43A9DF3EC0C4B /* Pods-tflite-verao-ime-usp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tflite-verao-ime-usp.release.xcconfig"; path = "Target Support Files/Pods-tflite-verao-ime-usp/Pods-tflite-verao-ime-usp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +75,9 @@
 				45C743282B69CD5900077AE7 /* ContentView.swift */,
 				45CEB5062B69CEAD00111D7E /* Aula1View.swift */,
 				45CEB5082B69CEBC00111D7E /* Aula2View.swift */,
+				45CEB50E2B69D6F300111D7E /* Aula3View.swift */,
+				45CEB5102B69D6FC00111D7E /* Aula4View.swift */,
+				45CEB5122B69D70400111D7E /* Aula5View.swift */,
 				45C7432A2B69CD5B00077AE7 /* Assets.xcassets */,
 				45C7432C2B69CD5B00077AE7 /* Preview Content */,
 			);
@@ -213,10 +222,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45CEB5112B69D6FC00111D7E /* Aula4View.swift in Sources */,
 				45CEB5072B69CEAD00111D7E /* Aula1View.swift in Sources */,
 				45C743292B69CD5900077AE7 /* ContentView.swift in Sources */,
 				45CEB5092B69CEBC00111D7E /* Aula2View.swift in Sources */,
 				45C743272B69CD5900077AE7 /* tflite_verao_ime_uspApp.swift in Sources */,
+				45CEB50F2B69D6F300111D7E /* Aula3View.swift in Sources */,
+				45CEB5132B69D70400111D7E /* Aula5View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

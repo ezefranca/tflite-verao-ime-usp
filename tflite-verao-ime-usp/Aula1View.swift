@@ -9,7 +9,8 @@ import SwiftUI
 
 struct Aula1View: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("TensorFlow Lite for Swift does not provide direct image processing operations like the TensorFlow Lite support library in Android.")
+            .font(.headline)
     }
 }
 

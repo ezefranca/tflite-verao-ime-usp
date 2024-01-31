@@ -68,12 +68,14 @@ struct Aula2View: View {
 extension Array where Element: FloatingPoint {
     init?(unsafeData: Data) {
         guard unsafeData.count % MemoryLayout<Element>.stride == 0 else { return nil }
-        self = unsafeData.withUnsafeBytes {
-            .init(UnsafeBufferPointer<Element>(start: $0, count: unsafeData.count / MemoryLayout<Element>.stride))
+        self = unsafeData.withUnsafeBytes { rawBufferPointer -> [Element] in
+            guard let pointer = rawBufferPointer.baseAddress?.assumingMemoryBound(to: Element.self) else {
+                return []
+            }
+            return Array(UnsafeBufferPointer(start: pointer, count: unsafeData.count / MemoryLayout<Element>.stride))
         }
     }
 }
-
 
 #Preview {
     Aula2View()

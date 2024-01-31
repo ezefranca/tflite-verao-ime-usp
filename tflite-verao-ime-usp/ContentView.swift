@@ -9,12 +9,37 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Aula2View()
+        NavigationView {
+            VStack {
+                NavigationLink(destination: Aula1View()) {
+                    Text("Open Aula 1")
+                }
+                .padding()
+
+                NavigationLink(destination: Aula2View()) {
+                    Text("Open Aula 2")
+                }
+                .padding()
+
+                NavigationLink(destination: Aula3View()) {
+                    Text("Open Aula 3")
+                }
+                .padding()
+
+                NavigationLink(destination: Aula4View()) {
+                    Text("Open Aula 4")
+                }
+                .padding()
+
+                NavigationLink(destination: Aula5View()) {
+                    Text("Open Aula 5")
+                }
+                .padding()
+            }
         }
-        .padding()
     }
 }
+
 
 #Preview {
     ContentView()
