@@ -1,0 +1,6 @@
+framework module Pods_tflite_verao_ime_usp {
+  umbrella header "Pods-tflite-verao-ime-usp-umbrella.h"
+
+  export *
+  module * { export * }
+}

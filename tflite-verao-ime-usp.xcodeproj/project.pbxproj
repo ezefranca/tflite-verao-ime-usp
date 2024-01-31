@@ -11,14 +11,24 @@
 		45C743292B69CD5900077AE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C743282B69CD5900077AE7 /* ContentView.swift */; };
 		45C7432B2B69CD5B00077AE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45C7432A2B69CD5B00077AE7 /* Assets.xcassets */; };
 		45C7432E2B69CD5B00077AE7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45C7432D2B69CD5B00077AE7 /* Preview Assets.xcassets */; };
+		45CEB5072B69CEAD00111D7E /* Aula1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CEB5062B69CEAD00111D7E /* Aula1View.swift */; };
+		45CEB5092B69CEBC00111D7E /* Aula2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CEB5082B69CEBC00111D7E /* Aula2View.swift */; };
+		45CEB50D2B69CF7000111D7E /* model_aula2.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 45CEB50C2B69CF7000111D7E /* model_aula2.tflite */; };
+		CAC4D0206109897053A5FA76 /* Pods_tflite_verao_ime_usp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E720C2FE60BA63E832D21F /* Pods_tflite_verao_ime_usp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07E720C2FE60BA63E832D21F /* Pods_tflite_verao_ime_usp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tflite_verao_ime_usp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45C743232B69CD5900077AE7 /* tflite-verao-ime-usp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tflite-verao-ime-usp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45C743262B69CD5900077AE7 /* tflite_verao_ime_uspApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tflite_verao_ime_uspApp.swift; sourceTree = "<group>"; };
 		45C743282B69CD5900077AE7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		45C7432A2B69CD5B00077AE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45C7432D2B69CD5B00077AE7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		45CEB5062B69CEAD00111D7E /* Aula1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aula1View.swift; sourceTree = "<group>"; };
+		45CEB5082B69CEBC00111D7E /* Aula2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aula2View.swift; sourceTree = "<group>"; };
+		45CEB50C2B69CF7000111D7E /* model_aula2.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = model_aula2.tflite; sourceTree = "<group>"; };
+		4AACA47A4A71F994ACEA8578 /* Pods-tflite-verao-ime-usp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tflite-verao-ime-usp.debug.xcconfig"; path = "Target Support Files/Pods-tflite-verao-ime-usp/Pods-tflite-verao-ime-usp.debug.xcconfig"; sourceTree = "<group>"; };
+		C7FAED3186C43A9DF3EC0C4B /* Pods-tflite-verao-ime-usp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tflite-verao-ime-usp.release.xcconfig"; path = "Target Support Files/Pods-tflite-verao-ime-usp/Pods-tflite-verao-ime-usp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAC4D0206109897053A5FA76 /* Pods_tflite_verao_ime_usp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +48,8 @@
 			children = (
 				45C743252B69CD5900077AE7 /* tflite-verao-ime-usp */,
 				45C743242B69CD5900077AE7 /* Products */,
+				9BB2B137E9358476212D48EE /* Pods */,
+				772EEF4923DA041D2F841817 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +64,11 @@
 		45C743252B69CD5900077AE7 /* tflite-verao-ime-usp */ = {
 			isa = PBXGroup;
 			children = (
+				45CEB50A2B69CF3B00111D7E /* TFModels */,
 				45C743262B69CD5900077AE7 /* tflite_verao_ime_uspApp.swift */,
 				45C743282B69CD5900077AE7 /* ContentView.swift */,
+				45CEB5062B69CEAD00111D7E /* Aula1View.swift */,
+				45CEB5082B69CEBC00111D7E /* Aula2View.swift */,
 				45C7432A2B69CD5B00077AE7 /* Assets.xcassets */,
 				45C7432C2B69CD5B00077AE7 /* Preview Content */,
 			);
@@ -67,6 +83,39 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		45CEB50A2B69CF3B00111D7E /* TFModels */ = {
+			isa = PBXGroup;
+			children = (
+				45CEB50B2B69CF4900111D7E /* aula2 */,
+			);
+			path = TFModels;
+			sourceTree = "<group>";
+		};
+		45CEB50B2B69CF4900111D7E /* aula2 */ = {
+			isa = PBXGroup;
+			children = (
+				45CEB50C2B69CF7000111D7E /* model_aula2.tflite */,
+			);
+			path = aula2;
+			sourceTree = "<group>";
+		};
+		772EEF4923DA041D2F841817 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07E720C2FE60BA63E832D21F /* Pods_tflite_verao_ime_usp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9BB2B137E9358476212D48EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4AACA47A4A71F994ACEA8578 /* Pods-tflite-verao-ime-usp.debug.xcconfig */,
+				C7FAED3186C43A9DF3EC0C4B /* Pods-tflite-verao-ime-usp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +123,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 45C743312B69CD5B00077AE7 /* Build configuration list for PBXNativeTarget "tflite-verao-ime-usp" */;
 			buildPhases = (
+				4887DA1DBF601587A94C6F81 /* [CP] Check Pods Manifest.lock */,
 				45C7431F2B69CD5900077AE7 /* Sources */,
 				45C743202B69CD5900077AE7 /* Frameworks */,
 				45C743212B69CD5900077AE7 /* Resources */,
@@ -126,18 +176,46 @@
 			buildActionMask = 2147483647;
 			files = (
 				45C7432E2B69CD5B00077AE7 /* Preview Assets.xcassets in Resources */,
+				45CEB50D2B69CF7000111D7E /* model_aula2.tflite in Resources */,
 				45C7432B2B69CD5B00077AE7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4887DA1DBF601587A94C6F81 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tflite-verao-ime-usp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		45C7431F2B69CD5900077AE7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45CEB5072B69CEAD00111D7E /* Aula1View.swift in Sources */,
 				45C743292B69CD5900077AE7 /* ContentView.swift in Sources */,
+				45CEB5092B69CEBC00111D7E /* Aula2View.swift in Sources */,
 				45C743272B69CD5900077AE7 /* tflite_verao_ime_uspApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +344,7 @@
 		};
 		45C743322B69CD5B00077AE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AACA47A4A71F994ACEA8578 /* Pods-tflite-verao-ime-usp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +374,7 @@
 		};
 		45C743332B69CD5B00077AE7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7FAED3186C43A9DF3EC0C4B /* Pods-tflite-verao-ime-usp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
