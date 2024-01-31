@@ -1,7 +1,7 @@
 
 # TensorFlow Lite Verão IME-USP
 
-Projetos desenvolvidos no curso de verão (Android), convertidos para iOS.
+Projetos convertidos para iOS que foram desenvolvidos no curso [450400285 - Introdução ao TensorFlow Lite para dispositivos Android](https://uspdigital.usp.br/apolo/apoObterCurso?cod_curso=450400285&cod_edicao=23001&numseqofeedi=1), do Instituto de Matemática e Estatística (IME-USP), ministrado pelos professores [Artur André Almeida de Macedo Oliveira](https://github.com/arturandre) e [Roberto Hirata](https://github.com/rhiratajr).
 
 ## Começando
 
@@ -15,7 +15,7 @@ O que você precisa para instalar o software e como instalá-lo.
 
 ```bash
 git clone https://github.com/ezefranca/tflite-verao-ime-usp.git
-cd tflite-verao-ime-us
+cd tflite-verao-ime-usp
 ```
 
 ### Instalação
