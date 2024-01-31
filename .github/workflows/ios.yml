@@ -1,4 +1,4 @@
-name: iOS starter workflow
+name: Swift
 
 on:
   push:
@@ -8,41 +8,12 @@ on:
 
 jobs:
   build:
-    name: Build and Test default scheme using any available iPhone simulator
+
     runs-on: macos-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Set up Xcode
-        uses: actions/setup-xcode@v2
-        with:
-          xcode-version: '15.2' # Change this to Xcode 15.2
-
-      - name: Discover scheme
-        id: discover_scheme
-        run: |
-          scheme_list=$(xcodebuild -list -json | tr -d "\n")
-          default_scheme=$(echo $scheme_list | ruby -e "require 'json'; puts JSON.parse(STDIN.gets)['project']['targets'][0]")
-          echo "Default scheme: $default_scheme"
-          echo $default_scheme > default
-        shell: bash
-
-      - name: Build and Test
-        env:
-          scheme: ${{ steps.discover_scheme.outputs.default_scheme }}
-        run: |
-          # xcrun xctrace returns via stderr, not the expected stdout (see https://developer.apple.com/forums/thread/663959)
-          device="iPhone 11" # Change this to the desired simulator
-          if [ $scheme = default ]; then scheme=$(cat default); fi
-          if [ -d *.xcworkspace ]; then
-            filetype_parameter="workspace"
-            file_to_build=$(find . -name "*.xcworkspace" | head -1)
-          else
-            filetype_parameter="project"
-            file_to_build=$(find . -name "*.xcodeproj" | head -1)
-          fi
-          file_to_build=$(echo $file_to_build | awk '{$1=$1;print}')
-          xcodebuild build-for-testing -scheme "$scheme" -$filetype_parameter "$file_to_build" -destination "platform=iOS Simulator,name=$device"
-        shell: bash
+    - uses: actions/checkout@v3
+    - name: Build
+      run: swift build -v
+    - name: Run tests
+      run: swift test -v
